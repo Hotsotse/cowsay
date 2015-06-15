@@ -9,7 +9,7 @@
 
 using namespace std;
 
-string underscore_length(string var)
+string underscore_length(string var) //thx wozniak <3
 {
         string start = " _";
         string add = "_"; // for ajusting lenth of bubble roof
@@ -20,7 +20,7 @@ string underscore_length(string var)
         return start;
 }
 
-string hyphen_length(string var)
+string hyphen_length(string var) 
 {
 	string start("  -");
 	string add("-");
@@ -49,6 +49,6 @@ int main()
 {	
 	string var;
 	getline(cin, var);
-    cowsay(var);
+    	cowsay(var);
  	return 0;
 }
