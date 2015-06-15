@@ -1,2 +1,2 @@
 # cowsay
-remake of the famous "cowsay",  really broken.
+remake of the famous "cowsay",  feel free to contrib :]
