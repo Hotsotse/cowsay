@@ -1,3 +1,2 @@
 # cowsay
-remake of the famous "cowsay"
-i need to somehow multiply a string by an integer :(
+remake of the famous "cowsay",  really broken.
