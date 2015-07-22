@@ -9,7 +9,7 @@
 
 using namespace std;
 
-string underscore_length(string var) //thx wozniak <3
+string underscore_length(string var)
 {
         string start = " _";
         string add = "_"; // for ajusting lenth of bubble roof
@@ -20,7 +20,7 @@ string underscore_length(string var) //thx wozniak <3
         return start;
 }
 
-string hyphen_length(string var) 
+string hyphen_length(string var)
 {
 	string start("  -");
 	string add("-");
@@ -45,10 +45,22 @@ void  cowsay(string var)
                 "               ||     ||\n" << endl;
 }
 
-int main()
+int main(int argc,char* argv[])
 {	
-	string var;
-	getline(cin, var);
-    	cowsay(var);
+	if (argc == 1)
+	{
+		cout << "Usage: ./cowsay -e [eyes] -T [tongue] [text]" << endl;
+	}
+	else
+	{
+		if (argv[1] == "help")
+		{
+			cout << "Usage: ./cowsay -e [eyes] -T [tongue] [text]" << endl;
+			string var;
+			getline(cin, var);
+    		cowsay(var);
+		}
+	}
+
  	return 0;
 }
